@@ -21,7 +21,7 @@ def initialize_files():
 
     if not os.path.exists(PIN_FILE):
         with open(PIN_FILE, "w") as file:
-            file.write("0000")  # default PIN
+            file.write("0000")  
 
     if not os.path.exists(STATEMENT_FILE):
         with open(STATEMENT_FILE, "w") as file:
@@ -71,7 +71,7 @@ def atm_menu():
     print("3. Withdraw Money")
     print("4. Change PIN")
     print("5. Mini Statement")
-    print("6. Account Details")  # ✅ New Feature Option
+    print("6. Account Details")  
     print("7. Exit")
 
 def main():
